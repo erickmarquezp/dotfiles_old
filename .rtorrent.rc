@@ -1,0 +1,38 @@
+# Download directory.
+directory = ~/Descargas
+
+# Session directory.
+session = ~/.rtorrent/session
+
+# Port settings.
+port_range = 49152-60000
+port_random = yes
+
+# Number of peers when downloading torrents. (for each torrent)
+min_peers = 35
+max_peers = 45
+
+# Number of peers when seeding torrents. (-1 means same as for downloading)
+min_peers_seed = -1
+max_peers_seed = -1
+
+# Maximum number of parallel uploads. (for each torrent)
+max_uploads = 6
+
+# Download and upload speed in KiB. (0 means unlimited)
+download_rate = 0
+upload_rate = 0
+
+# DHT.
+dht = auto
+dht_port = 6881
+peer_exchange = yes
+
+# UDP.
+use_udp_trackers = yes
+
+# Encryption settings.
+encryption = allow_incoming,try_outgoing,enable_retry
+
+# Check hash when a download is finished or rtorrent is started.
+check_hash = yes

@@ -1,0 +1,51 @@
+[options]
+allow_bold                          = true
+audible_bell                        = true
+browser                             = exo-open
+clickable_url                       = true
+cursor_blink                        = system
+cursor_shape                        = block
+font                                = Droid Sans Mono Slashed for Powerline 10
+mouse_autohide                      = true
+scrollback_lines                    = 12000
+scroll_on_keystroke                 = true
+scroll_on_output                    = false
+search_wrap                         = true
+urgent_on_bell                      = true
+
+[colors]
+foreground  = #c0c5ce
+background  = #2b303b
+
+color0      = #2b303b
+color1      = #bf616a
+color2      = #a3be8c
+color3      = #ebcb8b
+color4      = #8fa1b3
+color5      = #b48ead
+color6      = #96b5b4
+color7      = #c0c5ce
+color8      = #65737e
+color9      = #bf616a
+color10     = #a3be8c
+color11     = #ebcb8b
+color12     = #8fa1b3
+color13     = #b48ead
+color14     = #96b5b4
+color15     = #eff1f5
+color16     = #d08770
+color17     = #ab7967
+color18     = #343d46
+color19     = #4f5b66
+color20     = #a7adba
+color21     = #dfe1e8
+
+[hints]
+font                                = Droid Sans Mono Slashed for Powerline 10
+foreground                          = #2b303b
+background                          = #8fa1b3
+active_foreground                   = #2b303b
+active_background                   = #8fa1b3
+padding                             = 1
+border_width                        = 0
+roundness                           = 0

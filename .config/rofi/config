@@ -1,0 +1,18 @@
+! Colors                bg          fg          altbg       hlbg        hlfg
+rofi.color-normal:      #2b303b,    #8fa1b3,    #2b303b,    #8fa1b3,    #2b303b
+rofi.color-urgent:      #2b303b,    #bf616a,    #2b303b,    #bf616a,    #2b303b
+rofi.color-active:      #2b303b,    #a3be8c,    #2b303b,    #a3be8c,    #2b303b
+rofi.color-window:      #2b303b,    #8fa1b3
+
+rofi.modi                           : run,window
+rofi.width                          : 50
+rofi.lines                          : 10
+rofi.font                           : Droid Sans Mono Slashed for Powerline 10
+rofi.bw                             : 4
+rofi.padding                        : 0
+rofi.fixed-num-lines                : true
+rofi.disable-history                : true
+rofi.sidebar-mode                   : true
+rofi.line-margin                    : 0
+rofi.separator-style                : none
+rofi.hide-scrollbar                 : true
