@@ -43,9 +43,9 @@ color21     = #dfe1e8
 [hints]
 font                                = Droid Sans Mono Slashed for Powerline 10
 foreground                          = #2b303b
-background                          = #8fa1b3
+background                          = #a7adba
 active_foreground                   = #2b303b
-active_background                   = #8fa1b3
+active_background                   = #a7adba
 padding                             = 1
 border_width                        = 0
 roundness                           = 0
