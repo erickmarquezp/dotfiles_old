@@ -1,6 +1,3 @@
-" Vim mode.
-set nocompatible
-
 " Pathogen.
 execute pathogen#infect()
 
@@ -8,7 +5,10 @@ execute pathogen#infect()
 let g:airline_powerline_fonts=1
 let g:airline_theme='base16'
 
-" Load the plugins for specific file types.
+" Bufferline.
+let g:bufferline_echo=0
+
+" Filetype detection | plugins | indentation.
 filetype plugin indent on
 
 " Write settings.
@@ -22,19 +22,23 @@ let base16colorspace=256
 colorscheme base16-default-dark
 syntax on
 
-" Display settings.
+" Interface.
 set encoding=utf-8
-set noruler
-set noshowmode
+set hidden
 set laststatus=2
 set listchars=""
 set listchars+=tab:»-
 set listchars+=trail:·
 set listchars+=nbsp:·
 set list
+set noruler
+set noshowmode
 set nowrap
+set scrolloff=1
 set sidescroll=1
-call matchadd('ColorColumn', '\%>80v', 100)
+set sidescrolloff=1
+set title
+set wildmenu
 
 " Indentation.
 set autoindent
@@ -42,16 +46,23 @@ set expandtab
 set shiftwidth=4
 set softtabstop=4
 
-" Backspace behavior.
-set backspace=indent,eol,start
-
 " Search settings.
-set ignorecase
-set smartcase
-set incsearch
 set hlsearch
+set ignorecase
+set incsearch
+set smartcase
 
-" Use <C-L> to clear the highlighting of :set hlsearch.
-if maparg('<C-L>', 'n') ==# ''
-    nnoremap <silent> <C-L> :nohlsearch<C-R>=has('diff')?'<Bar>diffupdate':''<CR><CR><C-L>
-endif
+" Timeouts.
+set timeout
+set timeoutlen=1000
+set ttimeoutlen=50
+
+" Mappings.
+nnoremap <silent> <Tab> :bnext<CR>
+nnoremap <Up> <Nop>
+nnoremap <Down> <Nop>
+nnoremap <Left> <Nop>
+nnoremap <Right> <Nop>
+nnoremap <silent> <S-Tab> :bprevious<CR>
+nnoremap <silent> <C-L> :nohlsearch<C-R>=has('diff')?'<Bar>diffupdate':''<CR><CR><C-L>
+nnoremap <silent> <C-N> :NERDTreeToggle<CR>
