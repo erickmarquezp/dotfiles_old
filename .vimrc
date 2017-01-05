@@ -8,6 +8,9 @@ let g:airline_theme='base16'
 " Bufferline.
 let g:bufferline_echo=0
 
+" NERDTree.
+let NERDTreeIgnore = ['\.pyc$']
+
 " Filetype detection | plugins | indentation.
 filetype plugin indent on
 
