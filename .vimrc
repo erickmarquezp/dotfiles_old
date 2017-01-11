@@ -2,17 +2,23 @@
 execute pathogen#infect()
 
 " Airline.
-let g:airline_powerline_fonts=1
-let g:airline_theme='base16'
+let g:airline_powerline_fonts = 1
+let g:airline_theme = 'base16'
 
 " Bufferline.
-let g:bufferline_echo=0
+let g:bufferline_echo = 0
+
+" Emmet.
+let g:user_emmet_leader_key = ','
+let g:user_emmet_install_global = 0
+let g:user_emmet_install_command = 0
+let g:user_emmet_settings = {}
 
 " NERDTree.
-let NERDTreeIgnore = ['\.pyc$']
+let g:NERDTreeIgnore = ['\.pyc$']
 
-" Filetype detection | plugins | indentation.
-filetype plugin indent on
+" Filetype detection:ON  plugin:ON  indent:OFF.
+filetype plugin on
 
 " Write settings.
 set fileencoding=utf-8
@@ -21,7 +27,7 @@ set writebackup
 set pastetoggle=<F2>
 
 " Syntax highlighting.
-let base16colorspace=256
+let g:base16colorspace = 256
 colorscheme base16-default-dark
 syntax on
 
@@ -59,6 +65,14 @@ set smartcase
 set timeout
 set timeoutlen=1000
 set ttimeoutlen=50
+
+" Autogroups.
+augroup config
+    autocmd!
+    autocmd FileType css,html,jinja setlocal shiftwidth=2
+    autocmd FileType css,html,jinja setlocal softtabstop=2
+    autocmd FileType css,html,jinja EmmetInstall
+augroup END
 
 " Mappings.
 nnoremap <silent> <Tab> :bnext<CR>
