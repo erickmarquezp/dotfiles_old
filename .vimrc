@@ -8,11 +8,16 @@ let g:airline_theme = 'base16'
 " Bufferline.
 let g:bufferline_echo = 0
 
+" DelimitMate.
+let g:delimitMate_expand_cr = 1
+let g:delimitMate_expand_space = 1
+let g:delimitMate_jump_expansion = 1
+
 " Emmet.
 let g:user_emmet_leader_key = ','
 let g:user_emmet_install_global = 0
 let g:user_emmet_install_command = 0
-let g:user_emmet_settings = {}
+let g:user_emmet_settings = webapi#json#decode(join(readfile(expand('~/.emmet_snippets.json')), "\n"))
 
 " NERDTree.
 let g:NERDTreeIgnore = ['\.pyc$']
