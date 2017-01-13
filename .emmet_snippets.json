@@ -1,0 +1,14 @@
+{
+    "jinja": {
+        "extends": "html",
+        "snippets": {
+            "stm": "{% ${child}| %}",
+            "expr": "{{ ${child}| }}",
+            "cmt": "{# ${child}| #}",
+            "blk": "{% block ${child} %}\n\t|\n{% endblock %}",
+            "blki": "{% block ${child} %}|{% endblock %}",
+            "blkie": "{% block ${child} %}{% endblock %}|",
+            "extds": "{% extends \"${child}|\" %}"
+        }
+    }
+}
