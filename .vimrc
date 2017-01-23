@@ -9,14 +9,14 @@ let g:airline_theme = 'base16'
 let g:bufferline_echo = 0
 
 " DelimitMate.
+let g:delimitMate_autoclose = 0
 let g:delimitMate_expand_cr = 1
-let g:delimitMate_jump_expansion = 1
+let g:delimitMate_expand_space = 1
 
 " Emmet.
 let g:user_emmet_leader_key = ','
 let g:user_emmet_install_global = 0
 let g:user_emmet_install_command = 0
-let g:user_emmet_settings = webapi#json#decode(join(readfile(expand('~/.emmet_snippets.json')), "\n"))
 
 " NERDTree.
 let g:NERDTreeIgnore = ['\.pyc$']
@@ -87,3 +87,6 @@ nnoremap <Right> <Nop>
 nnoremap <silent> <S-Tab> :bprevious<CR>
 nnoremap <silent> <C-L> :nohlsearch<C-R>=has('diff')?'<Bar>diffupdate':''<CR><CR><C-L>
 nnoremap <silent> <C-N> :NERDTreeToggle<CR>
+
+inoremap <expr> <C-E> delimitMate#JumpMany()
+inoremap <expr> <C-J> delimitMate#JumpAny()
