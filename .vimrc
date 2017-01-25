@@ -14,9 +14,25 @@ let g:delimitMate_expand_cr = 1
 let g:delimitMate_expand_space = 1
 
 " Emmet.
-let g:user_emmet_leader_key = ','
-let g:user_emmet_install_global = 0
+let g:emmet_html5 = 1
 let g:user_emmet_install_command = 0
+let g:user_emmet_install_global = 0
+let g:user_emmet_leader_key = ','
+let g:user_emmet_settings = {
+\   'html': {
+\       'aliases': '',
+\       'block_elements': '',
+\       'default_attributes': '',
+\       'empty_elements': 'area,base,br,col,embed,hr,img,input,link,meta,param,source,track,wbr',
+\       'expandos': '',
+\       'indent_blockelement': 1,
+\       'inline_elements': '',
+\       'snippets': '',
+\   },
+\   'jinja': {
+\       'extends': 'html',
+\   },
+\}
 
 " NERDTree.
 let g:NERDTreeIgnore = ['\.pyc$']
