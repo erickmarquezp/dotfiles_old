@@ -6,12 +6,12 @@ snippet doctype
 
 snippet html5
 	<!doctype html>
-	<html>
-	<head>
-		<meta charset="utf-8">
-		<title>`Filename('', 'Page Title')`</title>
-	</head>
-	<body>
-		${0}
-	</body>
+	<html lang="${1:en}">
+		<head>
+			<meta charset="utf-8">
+			<title>${2:`Filename('', 'Page Title')`}</title>
+		</head>
+		<body>
+			${0}
+		</body>
 	</html>
