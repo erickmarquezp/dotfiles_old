@@ -26,7 +26,8 @@ let g:user_emmet_settings = {
 \       'empty_elements': 'area,base,br,col,embed,hr,img,input,link,meta,param,source,track,wbr',
 \       'expandos': '',
 \       'indent_blockelement': 1,
-\       'inline_elements': '',
+\       'inline_elements': 'a,em,strong,small,s,cite,q,dfn,abbr,ruby,rb,rt,rtc,rp,data,time,code,'
+\           .'var,samp,kbd,sub,sup,i,b,u,mark,bdi,bdo,span,br,wbr',
 \       'snippets': '',
 \   },
 \   'jinja': {
@@ -36,6 +37,11 @@ let g:user_emmet_settings = {
 
 " NERDTree.
 let g:NERDTreeIgnore = ['\.pyc$']
+
+" SnipMate.
+let g:snipMate = {
+\   'snippet_version': 1,
+\}
 
 " Filetype detection:ON  plugin:ON  indent:OFF.
 filetype plugin on
@@ -60,6 +66,7 @@ set listchars+=tab:»-
 set listchars+=trail:·
 set listchars+=nbsp:·
 set list
+set nofoldenable
 set noruler
 set noshowmode
 set nowrap

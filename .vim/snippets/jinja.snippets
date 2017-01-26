@@ -1,4 +1,5 @@
-# Generic tags.
+extends html
+
 snippet %
 	{% ${1} %}
 
@@ -7,3 +8,37 @@ snippet {
 
 snippet #
 	{# ${1} #}
+
+snippet blk
+	{% block ${1} %}
+		${0}
+	{% endblock %}
+
+snippet blki
+	{% block ${1} %}${0}{% endblock %}
+
+snippet block
+	{% block ${1} %}
+		${0}
+	{% endblock ${1} %}
+
+snippet extds
+	{% extends "${1}.jinja" %}
+
+snippet for
+	{% for ${1} in ${2} %}
+		${0}
+	{% endfor %}
+
+snippet if
+	{% if ${1} %}
+		${0}
+	{% endif %}
+
+snippet else
+	{% else %}
+		${0}
+
+snippet elif
+	{% elif ${1} %}
+		${0}
