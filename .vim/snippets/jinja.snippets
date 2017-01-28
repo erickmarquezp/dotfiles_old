@@ -42,7 +42,7 @@ snippet end
 	{% end${1} %}
 
 snippet extends
-	{% extends "${1}.jinja" %}
+	{% extends '${1}.jinja' %}
 
 snippet for
 	{% for ${1} in ${2} %}
@@ -54,8 +54,11 @@ snippet if
 		${0}
 	{% endif %}
 
+snippet import
+	{% import '${1}.jinja' as ${2} %}${0}
+
 snippet include
-	{% include "${1}.jinja" %}
+	{% include '${1}.jinja' %}
 
 snippet set
 	{% set ${1} %}
